@@ -23,12 +23,14 @@ http.createServer(function (req, res) {
 	res.writeHead(200, {'Content-Type': 'text/html'});
 
 	var url = req.url;
-
-	if(url ==='/about') {
+  if (url === '/home') {
+    render('index');
+  }
+	else if(url ==='/about') {
 		render('about');
 	}
 	else if(url ==='/contact') {
-		render('contact')
+		render('contact');
 	}
 	else {
 		render('index')
