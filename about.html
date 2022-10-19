@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LeRoi Vladimir's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+  }
+  /* body */
+  .hero{
+    height: 120vh;
+    width: 100%;
+    /* background-image: url(/me.png); */
+    background-color: #403f3e;
+    background-size: cover;
+    background-position: center;
+  }
+  /* navbar */
+  .hero nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  nav .logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  nav .logo:hover{
+    transform: scale(1.2);
+  }
+  span{
+    color: #f90040;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  nav ul li a:hover {
+    color: #f90040;
+    transition: .4s;
+  }
+  .btn {
+    background-color: #f90040;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+  }
+  .btn:hover {
+    transform: scale(1.2);
+  }
+  .about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color:#403f3e;
+  }
+  .about img{
+    height: auto;
+    width: 430px;
+  }
+  .about-text{
+    width: 550px;
+  }
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  .about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  button {
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  button:hover {
+    background-color: transparent;
+    border: 2px solid #f90040;
+    cursor: pointer;
+  }
+  footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color:#403f3e;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer-title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  footer .footer-info{
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+  }
+  footer .social {
+    display: flex;
+  }
+  footer .social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  footer .social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+  }
+  footer .end{
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+  }
+</style>
+  </head>
+  <body>
+    <div class="hero bg-color">
+      <header>
+        <nav class="align-items">
+          <h2 class="logo text-color">Le<span>Roi</span></h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about-us">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <a href="contact.html" class="btn text-color" >Hire Me</a>
+        </nav>
+      </header>
+    <main>
+    <!-- About us -->
+    <section id="about-us"class="about">
+      <div class="main">
+        <!-- <img src="me.png" alt=""> -->
+        <img src="https://i.ibb.co/qYG8vbL/test2.jpg" alt="">
+        <!-- <h1>Put an image here</h1> -->
+        <div class="about-text">
+          <h2>About Me</h2>
+          <h5>Web Developer & <span>RPA Developer<span></h5>
+          <p>I am a fullstack web developer as well as a robotic process automation developer. I can build all sorts of web applications, create apis for consumption and build automations for repetitve office processes. I can provide clean code with beautiful designs. I also make the websites more and more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+          <a href="contact.html"><button type="button" class="button">Let's Talk</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+    <!-- Footer -->
+    <footer>
+    <p class="footer-title">Brandon Armand Nyamkimbi</p>
+    <p class="footer-info">For more information:</p>
+    <div class="social">
+      <a href="https://web.facebook.com/brandon.armand.56"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/vladimir_leroi_chunswae"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/brandon-nyamkimbi"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Brandonarmand96"><i class="fab fa-github"></i></a>
+
+    </div>
+    <p class="end"> Copyright By LeRoi Codes</p>
+  </footer>
+  </body>
+</html>
